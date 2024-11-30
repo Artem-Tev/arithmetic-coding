@@ -39,5 +39,5 @@ scaled_result = int(low_scaled.to_integral_value(rounding='ROUND_CEILING'))
 result = Decimal(scaled_result) / power
 
 print(f"Число из итогового интервала: {result}")
-binary_representation = bin(int(result * 2**72))[2:]
-print(binary_representation)
+binary = bin(int(result * 2**72))[2:]
+print(binary)
